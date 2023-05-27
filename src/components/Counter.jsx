@@ -33,10 +33,13 @@ export default function Counter() {
   }, [invalidVote]);
 
   const incrementErdogan = () => setErdogan(erdogan + 1);
-  const decrementErdogan = () => setErdogan(erdogan - 1);
+  const decrementErdogan = () => {
+    if (erdogan > 0) setErdogan(erdogan - 1);
+  };
   const incrementKilicdaroglu = () => setKilicdaroglu(kilicdaroglu + 1);
-  const decrementKilicdaroglu = () => setKilicdaroglu(kilicdaroglu - 1);
-
+  const decrementKilicdaroglu = () => {
+    if (kilicdaroglu > 0) setKilicdaroglu(kilicdaroglu - 1);
+  };
   const removeLocalStorage = () => {
     localStorage.removeItem("erdogan");
     localStorage.removeItem("kilicdaroglu");
@@ -60,6 +63,7 @@ export default function Counter() {
           <label className="label">Toplam Zarf:</label>
           <input
             name="totalVote"
+            type="number"
             value={totalVote}
             onChange={(event) => setTotalVote(event.target.value)}
             className="input"
@@ -69,6 +73,7 @@ export default function Counter() {
           <label className="label">Geçersiz:</label>
           <input
             name="invalidVote"
+            type="number"
             value={invalidVote}
             onChange={(event) => setInvalidVote(event.target.value)}
             className="input"
@@ -76,7 +81,7 @@ export default function Counter() {
         </div>
         <div className="voteCountContainer">
           <h2>Sayılmayan / Kalan Oy:&nbsp;</h2>
-          <h2 className="voteCountText">
+          <h2>
             {totalVote === 0
               ? " - "
               : totalVote - invalidVote - erdogan - kilicdaroglu}
