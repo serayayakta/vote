@@ -33,7 +33,10 @@ export default function Counter() {
   }, [invalidVote]);
 
   const incrementErdogan = () => setErdogan(erdogan + 1);
+  const decrementErdogan = () => setErdogan(erdogan - 1);
   const incrementKilicdaroglu = () => setKilicdaroglu(kilicdaroglu + 1);
+  const decrementKilicdaroglu = () => setKilicdaroglu(kilicdaroglu - 1);
+
   const removeLocalStorage = () => {
     localStorage.removeItem("erdogan");
     localStorage.removeItem("kilicdaroglu");
@@ -51,9 +54,7 @@ export default function Counter() {
       <button className="resetButton" onClick={removeLocalStorage}>
         Sıfırla
       </button>
-      <h6 style={{ width: "100%" }}>
-        Sayılmayan oy sayısı için toplam zarf sayısı girilmelidir.
-      </h6>
+      <h6>Sayılmayan oy sayısı için toplam zarf sayısı girilmelidir.</h6>
       <div className="labelsContainer">
         <div className="labelsInputContainer">
           <label className="label">Toplam Zarf:</label>
@@ -75,7 +76,7 @@ export default function Counter() {
         </div>
         <div className="voteCountContainer">
           <h2>Sayılmayan / Kalan Oy:</h2>
-          <h2 className="voteCountText" contenteditable="true">
+          <h2 className="voteCountText">
             {totalVote === 0
               ? " - "
               : totalVote - invalidVote - erdogan - kilicdaroglu}
@@ -92,6 +93,9 @@ export default function Counter() {
             image="../assets/erdogan-profile.jpeg"
             name="RECEP TAYYİP ERDOĞAN"
           />
+          <button className="button decrement" onClick={decrementErdogan}>
+            - 1
+          </button>
           <button className="button" onClick={incrementErdogan}>
             + 1
           </button>
@@ -102,6 +106,9 @@ export default function Counter() {
             image="../assets/kilicdaroglu-profile.jpeg"
             name="KEMAL KILIÇDAROĞLU"
           />
+          <button className="button decrement" onClick={decrementKilicdaroglu}>
+            - 1
+          </button>
           <button className="button" onClick={incrementKilicdaroglu}>
             + 1
           </button>

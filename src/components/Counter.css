@@ -1,32 +1,38 @@
 .button {
   display: inline-block;
-  padding: 15px 25px;
+  width:60px;
+  height:40px;
   margin: 15px;
-  font-size: 28px;
+  font-size: 14px;
   text-align: center;
   color: #fff;
   background-color: #10c58b;
   border: none;
   border-radius: 15px;
 }
+
+.decrement {
+ background-color: rgb(127, 94, 181);
+}
+
 .resetButton {
   display: inline-block;
   font-size: 16px;
   text-align: center;
   color: #fff;
-  background-color: rgb(145, 49, 49);
+  background-color: rgb(192, 84, 183);
   border: none;
   border-radius: 15px;
 }
 
-.button:active {
+.resetButton:active {
   transform: translateY(2px);
 }
 
 .labelsContainer {
   width: 100%;
   flex-direction: column;
-  margin-left: 16%;
+
 }
 .labelsInputContainer {
   display: flex;
@@ -39,8 +45,9 @@
 
 .input {
   margin-left: 20px;
-  width: 20%;
-  height: 90%;
+  margin-top: 5px;
+  width: 40px;
+  height: 20px;
 }
 
 .voteCountContainer {
@@ -57,7 +64,11 @@
 
 .mainContainer {
   width: 100%;
-  max-width: 600px;
   display: flex;
+  justify-content: center;
   margin-top: 15px;
+}
+
+h6 {
+  text-align: left;
 }

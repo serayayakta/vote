@@ -8,7 +8,7 @@ export default function Profile(props) {
     <div
       style={{
         display: "block",
-        width: "200px",
+        width: "160px",
         height: "200px",
         overflow: "hidden",
         marginLeft: "10px",
