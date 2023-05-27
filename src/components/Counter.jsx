@@ -75,7 +75,7 @@ export default function Counter() {
           />
         </div>
         <div className="voteCountContainer">
-          <h2>Sayılmayan / Kalan Oy:</h2>
+          <h2>Sayılmayan / Kalan Oy:&nbsp;</h2>
           <h2 className="voteCountText">
             {totalVote === 0
               ? " - "

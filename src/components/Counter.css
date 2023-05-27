@@ -12,7 +12,7 @@
 }
 
 .decrement {
- background-color: rgb(127, 94, 181);
+ background-color: #e14f4f;
 }
 
 .resetButton {
@@ -20,7 +20,7 @@
   font-size: 16px;
   text-align: center;
   color: #fff;
-  background-color: rgb(192, 84, 183);
+  background-color: rgb(18, 18, 18);
   border: none;
   border-radius: 15px;
 }
@@ -30,9 +30,7 @@
 }
 
 .labelsContainer {
-  width: 100%;
   flex-direction: column;
-
 }
 .labelsInputContainer {
   display: flex;
@@ -57,16 +55,18 @@
   font-size: 18px;
 }
 
-.voteCountText {
-  min-width: 30px;
-  background-color: blue;
-}
-
 .mainContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 15px;
+}
+
+h1 {
+  background-color:rgb(18, 18, 18);
+  width: 160px;
+  margin: 40px 10px 20px 10px;
+  color: white;
 }
 
 h6 {
