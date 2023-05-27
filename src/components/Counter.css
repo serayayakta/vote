@@ -1,0 +1,63 @@
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 15px;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  background-color: #10c58b;
+  border: none;
+  border-radius: 15px;
+}
+.resetButton {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(145, 49, 49);
+  border: none;
+  border-radius: 15px;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.labelsContainer {
+  width: 100%;
+  flex-direction: column;
+  margin-left: 16%;
+}
+.labelsInputContainer {
+  display: flex;
+}
+
+.label {
+  width: 40%;
+  display: flex;
+}
+
+.input {
+  margin-left: 20px;
+  width: 20%;
+  height: 90%;
+}
+
+.voteCountContainer {
+  width: 100%;
+  display: flex;
+  max-height: 30px;
+  font-size: 18px;
+}
+
+.voteCountText {
+  min-width: 30px;
+  background-color: blue;
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  margin-top: 15px;
+}
