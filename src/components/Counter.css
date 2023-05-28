@@ -2,7 +2,7 @@
   display: inline-block;
   width:60px;
   height:40px;
-  margin: 15px;
+  margin: 0px 15px 15px 15px;
   font-size: 14px;
   text-align: center;
   color: #fff;
@@ -17,12 +17,13 @@
 
 .resetButton {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   color: #fff;
   background-color: rgb(18, 18, 18);
   border: none;
-  border-radius: 15px;
+  border-radius: 14px;
+  max-height: 30px;
 }
 
 .resetButton:active {
@@ -52,8 +53,9 @@
 
 .voteCountContainer {
   display: flex;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
+  align-items: stretch;
 }
 
 .mainContainer {
@@ -65,15 +67,17 @@
 h1 {
   background-color:rgb(18, 18, 18);
   width: 160px;
-  margin: 20px 10px 20px 10px;
+  margin: 15px 10px 20px 10px;
   color: white;
   text-align: center;
 }
 
 h2 {
-  width: 345px;
+  min-width: 345px;
 }
 
 h6 {
+  min-width: 320px;
+  margin: 15px;
   text-align: left;
 }
