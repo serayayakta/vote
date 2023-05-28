@@ -80,8 +80,8 @@ export default function Counter() {
           />
         </div>
         <div className="voteCountContainer">
-          <h2>Sayılmayan / Kalan Oy:&nbsp;</h2>
           <h2>
+            Sayılmayan / Kalan Oy:&nbsp;
             {totalVote === 0
               ? " - "
               : totalVote - invalidVote - erdogan - kilicdaroglu}

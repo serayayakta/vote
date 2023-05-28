@@ -30,6 +30,7 @@
 }
 
 .labelsContainer {
+  display: flex;
   flex-direction: column;
 }
 .labelsInputContainer {
@@ -50,11 +51,9 @@
 }
 
 .voteCountContainer {
-  width: 100%;
   display: flex;
   font-size: 18px;
   text-align: left;
-  align-items: center;
 }
 
 .mainContainer {
@@ -68,6 +67,11 @@ h1 {
   width: 160px;
   margin: 20px 10px 20px 10px;
   color: white;
+  text-align: center;
+}
+
+h2 {
+  width: 345px;
 }
 
 h6 {
